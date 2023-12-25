@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>عملیات ناموفق</title>
+    <div th:replace="fragment/layout::head"></div>
+</head>
+<body>
+<!--<div th:replace="fragment/layout::header"></div>-->
+
+<div class="container-fluid m-0 p-6">
+    <div class="modal-dialog modal-confirm" style="direction: rtl !important;">
+        <div class="modal-content" style="direction: rtl !important;">
+            <div class="modal-header" style="direction: rtl !important;">
+                <div class="icon-box" style="direction: rtl !important;">
+                </div>
+                <h4 class="modal-title w-100" style="direction: rtl !important;text-align: right !important;">پیغام
+                    سیستم!</h4>
+            </div>
+            <div class="modal-body">
+                <p class="text-center"> متاسفانه مشکلی در احرای درخواست شما پیش آمده است. </p>
+                <p class="text-center"> لطفا بعدا مجددا تلاش کنید و یا با واحد پشتبانی تماس بگیرید. </p>
+            </div>
+            <div class="modal-footer">
+                <form>
+                    <input class="btn btn-warning btn-block" type="button" value="بازگشت!" onclick="history.back()">
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

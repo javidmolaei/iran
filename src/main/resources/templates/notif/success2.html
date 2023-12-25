@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>عملیات موفق</title>
+    <div th:replace="fragment/layout::head"></div>
+</head>
+<body>
+<div th:replace="fragment/layout::header"></div>
+
+<div class="container-fluid m-0 p-6">
+    <div class="modal-dialog modal-confirm" style="direction: rtl !important;">
+        <div class="modal-content" style="direction: rtl !important;">
+            <div class="modal-header" style="direction: rtl !important;">
+                <div class="icon-box" style="direction: rtl !important;">
+                    <!--                    <i class="material-icons">&#xE876;</i>-->
+<!--                    <i class="material-icons">x</i>-->
+                </div>
+                <h4 class="modal-title w-100" style="direction: rtl !important;text-align: right !important;">پیغام سیستم!</h4>
+            </div>
+            <div class="modal-body">
+                <p class="text-center">
+                    عملیات با موفقیت انجام شد.</p>
+            </div>
+            <div class="modal-footer">
+                <a class="btn btn-success btn-block" th:href="@{/secreports/numbercontrol}">تایید</a>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en" dir="rtl" data-nav-layout="vertical" data-vertical-style="overlay" data-theme-mode="light"
+      data-header-styles="light" data-menu-styles="light" data-toggled="close">
+<head>
+    <meta charset="UTF-8">
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>ایران لج</title>
+    <meta name="Description" content="Bootstrap Responsive Admin Web Dashboard HTML5 Template">
+    <meta name="Author" content="Spruko Technologies Private Limited">
+
+    <div th:replace="fragment/layout::head"></div>
+
+</head>
+
+<body>
+<div class="container">
+    <div class="row justify-content-center align-items-center authentication authentication-basic h-100">
+        <div class="col-xxl-4 col-xl-5 col-lg-5 col-md-6 col-sm-8 col-12">
+            <div class="my-5 d-flex justify-content-center">
+                <a href="./">
+                    <img th:src="@{/images/brand-logos/desktop-logo.png}"
+                         alt="" class="authentication-brand desktop-logo" style="height: 50px !important;margin-bottom: 0 !important;">
+                    <img
+                            th:src="@{/images/brand-logos/desktop-logo.png}" alt="logo" class="desktop-dark">
+                </a>
+            </div>
+
+            <div class="card custom-card">
+                <div class="card-body p-5">
+                    <div class="alert alert-danger" role="alert">
+                        <p class="h5 fw-semibold mb-2 text-center">خطای سیستم!</p>
+                    </div>
+                    <p class="mb-4 text-muted op-7 fw-normal text-center">سامانه جامع ایران لج</p>
+                    <div class="row gy-3">
+                        <div class="col-xl-12">
+
+                        </div>
+                        <div class="col-xl-12 mb-2">
+                            <p class="text-center"> متاسفانه مشکلی در اجرای درخواست شما پیش آمده است. </p>
+                            <p class="text-center"> لطفا بعدا مجددا تلاش کنید و یا با واحد پشتبانی تماس بگیرید. </p>
+                        </div>
+                        <form>
+                            <div class="col-xl-12 d-grid mt-2">
+
+                                <input class="btn btn-danger btn-block" type="button" value="بازگشت!"
+                                       onclick="history.back()">
+
+                            </div>
+                        </form>
+                    </div>
+
+                    <div class="text-center my-3 authentication-barrier"><span>تماس با ما</span></div>
+                    <div class="btn-list text-center">
+                        <button class="btn btn-icon btn-light"><i class="ri-facebook-line fw-bold text-dark op-7"></i>
+                        </button>
+                        <button class="btn btn-icon btn-light"><i class="ri-google-line fw-bold text-dark op-7"></i>
+                        </button>
+                        <button class="btn btn-icon btn-light"><i class="ri-twitter-line fw-bold text-dark op-7"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

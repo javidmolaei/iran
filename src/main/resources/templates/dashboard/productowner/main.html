@@ -1,0 +1,89 @@
+<!DOCTYPE html><
+<html xmlns:th="http://www.thymeleaf.org"
+      data-nav-layout="vertical"
+      data-theme-mode="light"
+      data-header-styles="light"
+      data-menu-styles="dark"
+      data-toggled="close">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, user-scalable=no'>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>ایران لج</title>
+    <meta name="Description" content="Bootstrap Responsive Admin Web Dashboard HTML5 Template">
+    <meta name="Author" content="Spruko Technologies Private Limited">
+
+    <!-- Favicon -->
+    <link rel="icon" th:href="@{/images/brand-logos/favicon.ico}" type="image/x-icon">
+    <div th:replace="fragment/layout::head"></div>
+
+</head>
+
+<body>
+<div class="page">
+    <div th:replace="fragment/layout::TopMenu"></div>
+    <div th:replace="fragment/layout::productownerSideBar"></div>
+
+
+    <div class="main-content app-content">
+        <div class="container-fluid">
+
+            <div class="row">
+                <div class="col-xl-12">
+                    <div class="card custom-card">
+                        <div class="card-header">
+                            <div class="card-title">نکات مهم در هنگام ثبت نام</div>
+                        </div>
+                        <div class="card-body">
+                            <div class="alert alert-primary" role="alert">
+                                <p>1- لطفا در انتخاب تصاویر مدارک ارسالی از
+                                    فایل های صحیح با اندازه زیر 1 مگابایت استفاده کنید.</p>
+                            </div>
+                            <div class="alert alert-primary" role="alert">
+                                <p>2- در صورت عدم تطابق اطلاعات ثبت شده با مدارک ارسالی، ثبت نام شما توسط سیستم لغو
+                                    خواهد
+                                    شد.</p>
+                            </div>
+                            <div class="alert alert-primary" role="alert">
+                                <p>3- شماره تلفن درج شده در هنگام ثبت نام باید به نام خود فرد ثبت نام کننده باشد.</p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer mt-auto py-3 bg-white">
+        <div class="container" style="float: left">
+            <span class="text-muted"> Copyright © <span id="year"></span>
+                <a href="javascript:void(0);" class="text-dark fw-semibold">framework</a>. Designed with
+                <span class="bi bi-heart-fill text-danger"></span> by
+                <a href="http:\\www.woya.ir">
+                    <span class="fw-semibold text-primary text-decoration-underline">WoyaGroup</span>
+                </a> All rights reserved
+            </span>
+        </div>
+    </footer>
+
+</div>
+<div class="scrollToTop"><span class="arrow"><i class="ri-arrow-up-s-fill fs-20"></i></span></div>
+<div id="responsive-overlay"></div>
+<script th:src="@{/libs/@popperjs/core/umd/popper.min.js}"></script>
+<script th:src="@{/libs/bootstrap/js/bootstrap.bundle.min.js}"></script>
+<script th:src="@{/js/defaultmenu.min.js}"></script>
+<script th:src="@{/libs/node-waves/waves.min.js}"></script>
+<script th:src="@{/js/sticky.js}"></script>
+<script th:src="@{/libs/simplebar/simplebar.min.js}"></script>
+<script th:src="@{/js/simplebar.js}"></script>
+<script th:src="@{/libs/@simonwep/pickr/pickr.es5.min.js}"></script>
+<script th:src="@{/js/custom-switcher.min.js}"></script>
+<script th:src="@{/js/product-list.js}"></script>
+<script th:src="@{/js/custom.js}"></script>
+
+<div th:replace="fragment/layout::footer"></div>
+
+</body>
+</html>

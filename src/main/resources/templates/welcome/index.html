@@ -1,0 +1,609 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="IranLoj" content="">
+    <meta name="author" content="">
+
+    <title>سامانه ایران لج</title>
+
+    <link rel="stylesheet" type="text/css" th:href="@{/css/index/css/bootstrap.min.rtl.css}">
+
+    <!--    <link id="style" th:href="@{/libs/bootstrap/css/bootstrap.rtl.min.css}" rel="stylesheet"> &lt;!&ndash; Style Css &ndash;&gt;-->
+
+    <link rel="stylesheet" type="text/css" th:href="@{/css/index/css/font-awesome.css}">
+    <link rel="stylesheet" th:href="@{/css/index/css/templatemo-softy-pinko.css}">
+    <link th:href="@{/css/myStyle.css}" rel="stylesheet">
+
+</head>
+
+<body>
+
+
+<!-- ***** Header Area Start ***** -->
+<header class="header-area header-sticky">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <nav class="main-nav">
+                    <!-- ***** Logo Start ***** -->
+                    <a href="#" class="logo">
+                        <img th:src="@{/images/index/images/logo.png}" alt="Softy Pinko"/>
+                    </a>
+                    <!-- ***** Logo End ***** -->
+                    <!-- ***** Menu Start ***** -->
+                    <ul class="nav" >
+                        <li><a href="#welcome" class="active" style="letter-spacing: 0;">خانه</a></li>
+                        <li><a href="#features" style="letter-spacing: 0;">خدمات ما</a></li>
+                        <li><a href="#work-process" style="letter-spacing: 0;">نحوه همکاری</a></li>
+                        <li><a href="#testimonials" style="letter-spacing: 0;">معرفی ایران لج</a></li>
+                        <li><a href="#pricing-plans" style="letter-spacing: 0;">پلن همکاری</a></li>
+                        <li><a href="#blog" style="letter-spacing: 0;">اخبار و اطلاعیه ها</a></li>
+                        <li><a href="./panel" style="letter-spacing: 0;">ورود کاربر</a></li>
+                        <li><a href="#contact-us" style="direction: rtl;letter-spacing: 0;">تماس با ما</a></li>
+                    </ul>
+                    <a class='menu-trigger'>
+                        <span>Menu</span>
+                    </a>
+                    <!-- ***** Menu End ***** -->
+                </nav>
+            </div>
+        </div>
+    </div>
+</header>
+<!-- ***** Header Area End ***** -->
+
+<!-- ***** Welcome Area Start ***** -->
+<div class="welcome-area" id="welcome">
+
+    <!-- ***** Header Text Start ***** -->
+    <div class="header-text">
+        <div class="container">
+            <div class="row">
+                <div class="offset-xl-3 col-xl-6 offset-lg-2 col-lg-8 col-md-12 col-sm-12">
+                    <!--                    <h1>We provide the best <strong>strategy</strong><br>to grow up your <strong>business</strong></h1>-->
+                    <h1>به سامانه <strong>بازار آنلاین خدمات تجاری و حمل و نقل ایران </strong><br>خوش آمدید.</h1>
+                    <p>لجستیک و حمل و نقل بین الملل – ترخیص و خدمات گمرکی – خدمات نمایندگی و ایجنتی کالا در مکان مورد
+                        نظر صاحبین تجارت – خدمات بیمه باربری و سلامت کالا – خدمات انتقال ارز </p>
+                    <a href="#features" class="main-button-slider">هم اکنون عضو شوید</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ***** Header Text End ***** -->
+</div>
+<!-- ***** Welcome Area End ***** -->
+
+<!-- ***** Features Small Start ***** -->
+<section class="section home-feature">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="row">
+                    <!-- ***** Features Small Item Start ***** -->
+                    <div class="col-lg-4 col-md-6 col-sm-6 col-12"
+                         data-scroll-reveal="enter bottom move 50px over 0.6s after 0.2s">
+                        <div class="features-small-item">
+                            <div class="icon">
+                                <i><img th:src="@{/images/index/images/featured-item-01.png}" alt=""></i>
+                            </div>
+                            <h5 class="features-title">استراتژی نوین</h5>
+                            <p>افراد متخصص پیدا کنید و با پرداخت امن می‌توانید با اطمینان با آنها بصورت آنلاین کار
+                                کنید.</p>
+                        </div>
+                    </div>
+                    <!-- ***** Features Small Item End ***** -->
+
+                    <!-- ***** Features Small Item Start ***** -->
+                    <div class="col-lg-4 col-md-6 col-sm-6 col-12"
+                         data-scroll-reveal="enter bottom move 50px over 0.6s after 0.4s">
+                        <div class="features-small-item">
+                            <div class="icon">
+                                <i><img th:src="@{/images/index/images/featured-item-01.png}" alt=""></i>
+                            </div>
+                            <h5 class="features-title">بهترین ارتباط برخط</h5>
+                            <p>اگر سوالی در ذهنتان دارید بلافاصله با ما تماس بگیرید و مشاوره رایگان دریافت کنید.</p>
+                        </div>
+                    </div>
+                    <!-- ***** Features Small Item End ***** -->
+
+                    <!-- ***** Features Small Item Start ***** -->
+                    <div class="col-lg-4 col-md-6 col-sm-6 col-12"
+                         data-scroll-reveal="enter bottom move 50px over 0.6s after 0.6s">
+                        <div class="features-small-item">
+                            <div class="icon">
+                                <i><img th:src="@{/images/index/images/featured-item-01.png}" alt=""></i>
+                            </div>
+                            <h5 class="features-title">کسب و کار نامحدود</h5>
+                            <p>تحت نظارت متخصصان ما، از خدمات لجستیک بهره مند شوید و با دیگران به همکاری بپردازید</p>
+                        </div>
+                    </div>
+                    <!-- ***** Features Small Item End ***** -->
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- ***** Features Small End ***** -->
+
+<!-- ***** Features Big Item Start ***** -->
+<section class="section padding-top-70 padding-bottom-0" id="features">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-5 col-md-12 col-sm-12 align-self-center"
+                 data-scroll-reveal="enter left move 30px over 0.6s after 0.4s">
+                <img th:src="@{/images/index/images/left-image.png}" class="rounded img-fluid d-block mx-auto"
+                     alt="App">
+            </div>
+            <div class="col-lg-1"></div>
+            <div class="col-lg-6 col-md-12 col-sm-12 align-self-center mobile-top-fix">
+                <div class="left-heading">
+                    <h2 class="section-title">چگونه می توانم از خدمات شرکت استفاده کنم؟</h2>
+                </div>
+                <div class="left-text">
+                    <p style="text-align: justify;">برای استفاده از خدمات ایران لج، شما باید ابتدا وارد سامانه
+                        www.iranloj.com شده و با توجه به زمینه فعالیت خود در قسمت مربوطه ثبت نام نموده و زمینه های
+                        فعالیتی قابل اجرا در سامانه ایران لج که به شرح زیر میباشد را دریافت کنید یا به ارایه خدمات به
+                        دیگر کارفرمایان بپردازید.</p>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="hr"></div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- ***** Features Big Item End ***** -->
+
+<!-- ***** Features Big Item Start ***** -->
+<section class="section padding-bottom-100">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6 col-md-12 col-sm-12 align-self-center mobile-bottom-fix">
+                <div class="left-heading">
+                    <h2 class="section-title">برخی از خدمات سامانه ایران لج</h2>
+                </div>
+                <div class="left-text">
+                    <div class="row">
+                        <div class="col col-md-12">
+                            <ul class="list-group">
+                                <li class="list-group-item">امکانات مختص صاحبین کالا</li>
+                                <li class="list-group-item">امکانات مختص بازاریابان ایران لج</li>
+                                <li class="list-group-item">امکانات مختص شرکت های خدمات دهنده حمل</li>
+                                <li class="list-group-item">امکانات مختص شرکت های خدماتی اجرایی</li>
+                                <li class="list-group-item">امکانات مختص شرکت های بازرس و بیمه</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-1"></div>
+            <div class="col-lg-5 col-md-12 col-sm-12 align-self-center mobile-bottom-fix-big"
+                 data-scroll-reveal="enter right move 30px over 0.6s after 0.4s">
+                <img th:src="@{/images/index/images/right-image.png}" class="rounded img-fluid d-block mx-auto"
+                     alt="App">
+            </div>
+        </div>
+    </div>
+</section>
+<!-- ***** Features Big Item End ***** -->
+
+<!-- ***** Home Parallax Start ***** -->
+<section class="mini" id="work-process">
+    <div class="mini-content">
+        <div class="container">
+            <div class="row">
+                <div class="offset-lg-3 col-lg-6">
+                    <div class="info">
+                        <h1>نحوه همکاری با ما</h1>
+                        <p>چند گام ساده و کوتاه جهت همکاری با ایران لج</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ***** Mini Box Start ***** -->
+            <div class="row">
+                <div class="col-lg-2 col-md-3 col-sm-6 col-6">
+                    <a href="#" class="mini-box">
+                        <i><img th:src="@{/images/index/images/work-process-item-01.png}" alt=""></i>
+                        <strong>ثبت نام</strong>
+                        <span>باتوجه به زمینه فعالیت خود در بخش مربوطه ثبت نام کنید.</span>
+                    </a>
+                </div>
+                <div class="col-lg-2 col-md-3 col-sm-6 col-6">
+                    <a href="#" class="mini-box">
+                        <i><img th:src="@{/images/index/images/work-process-item-01.png}" alt=""></i>
+                        <strong>تکمیل مشخصات</strong>
+                        <span>پس از تایید کاربری توسط کارشناسان، مشخصات خود را کامل کنید.</span>
+                    </a>
+                </div>
+                <div class="col-lg-2 col-md-3 col-sm-6 col-6">
+                    <a href="#" class="mini-box">
+                        <i><img th:src="@{/images/index/images/work-process-item-01.png}" alt=""></i>
+                        <strong>احراز هویت</strong>
+                        <span>بررسی اطلاعات ثبت شده توسط کارشناسان سامانه ایران لچ</span>
+                    </a>
+                </div>
+                <div class="col-lg-2 col-md-3 col-sm-6 col-6">
+                    <a href="#" class="mini-box">
+                        <i><img th:src="@{/images/index/images/work-process-item-01.png}" alt=""></i>
+                        <strong>فعال سازی</strong>
+                        <span>فعال سازی پروفایل کاربری و ارسال اطلاعات تکمیلی از سامانه</span>
+                    </a>
+                </div>
+                <div class="col-lg-2 col-md-3 col-sm-6 col-6">
+                    <a href="#" class="mini-box">
+                        <i><img th:src="@{/images/index/images/work-process-item-01.png}" alt=""></i>
+                        <strong>انتخاب سرویس</strong>
+                        <span>بهره برداری از سرویس های انتخابی در سامانه و آغاز همکاری</span>
+                    </a>
+                </div>
+                <div class="col-lg-2 col-md-3 col-sm-6 col-6">
+                    <a href="#" class="mini-box">
+                        <i><img th:src="@{/images/index/images/work-process-item-01.png}" alt=""></i>
+                        <strong>بازخورد</strong>
+                        <span>ثبت بازخورد از طریق کارفرمایان و پرداخت طبق شرایط قرارداد</span>
+                    </a>
+                </div>
+            </div>
+            <!-- ***** Mini Box End ***** -->
+        </div>
+    </div>
+</section>
+<!-- ***** Home Parallax End ***** -->
+
+<!-- ***** Testimonials Start ***** -->
+<section class="section" id="testimonials">
+    <div class="container">
+        <!-- ***** Section Title Start ***** -->
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="center-heading">
+                    <h2 class="section-title">ایران لج چیست؟</h2>
+                </div>
+            </div>
+            <div class="col-lg-12">
+                <div class="center-text">
+                    <p style="text-align: justify;letter-spacing: 0;">ایران لج یک سامانه خدمات تجاری از قبیل لجستیک و
+                        حمل و نقل بین الملل – ترخیص و خدمات گمرکی – خدمات نمایندگی و ایجنتی کالا در مکان مورد نظر صاحبین
+                        تجارت – خدمات بیمه باربری و سلامت کالا – خدمات انتقال ارز است که به کاربران خود امکان می دهد به
+                        راحتی و سریعتر از هر زمان دیگری انجام خدمات تجاری خود را از طریق یک مناقصه سازمان دهی شده به
+                        بهترین و با کیفیت ترین مجری خدمات واگذار نمایید. این اپلیکشن با استفاده از تکنولوژی های پیشرفته
+                        و هوش مصنوعی، بهینه سازی مسیرها، پیش بینی قیمت ها، مدیریت موجودی و تامین کنندگان، ردیابی بار و
+                        ارائه گزارش های دقیق را انجام می دهد.</p>
+                    <p style="text-align: justify;letter-spacing: 0;">ایران لج همچنین از امنیت و کیفیت بالای خدمات خود
+                        مطمئن است و در صورت بروز هرگونه مشکل یا تاخیر، مسئولیت کامل را بر عهده می گیرد.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- ***** Testimonials End ***** -->
+
+<!-- ***** Pricing Plans Start ***** -->
+<section class="section colored" id="pricing-plans">
+    <div class="container">
+        <!-- ***** Section Title Start ***** -->
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="center-heading">
+                    <h2 class="section-title">ایران لج از کجا آمد؟</h2>
+                </div>
+            </div>
+            <div class="offset-lg-1 col-lg-10">
+                <div class="center-text">
+                    <p style="text-align: justify;letter-spacing: 1px">ایران لج در سال ۲۰۲۱ توسط گروهی از متخصصان تجاری
+                        ایران که خود در زمینه های مختلف تجاری و لجستیک فعال بوده با هدف ایجاد یک پلتفرم جامع و کارآمد
+                        برای ارتباط بین مشتریان و تامین کنندگان بار در بازار ایران و خاورمیانه راه اندازی شد. این شرکت
+                        با داشتن زیر مجموعه هایی که مجوزهای لازم از سازمان های مربوطه و همکاری با شرکای معتبر در حوزه
+                        های مختلف، توانسته است در مدت کوتاهی به یکی از پیشروان صنعت خدمات تجاری ، لجستیک و حمل و نقل بین
+                        الملل در منطقه تبدیل شود. ایران لج در حال حاضر بیش از 2۰۰۰ کاربر فعال دارد و برنامه دارد تا با
+                        گسترش شبکه خود و ارائه خدمات جدید و متنوع، رضایت و اعتماد مشتریان خود را بیشتر کند.</p>
+                </div>
+            </div>
+        </div>
+        <!-- ***** Section Title End ***** -->
+
+        <div class="row">
+            <!-- ***** Pricing Item Start ***** -->
+            <div class="col-lg-4 col-md-6 col-sm-12" data-scroll-reveal="enter bottom move 50px over 0.6s after 0.2s">
+                <div class="pricing-item">
+                    <div class="pricing-header">
+                        <h3 class="pricing-title">کاربران عادی</h3>
+                    </div>
+                    <div class="pricing-body">
+                        <div class="price-wrapper">
+                            <span class="price">0</span>
+                            <span class="currency">ریال</span>
+                            <span class="period">عضویت رایگان</span>
+                        </div>
+                        <ul class="list">
+                            <li class="active">ثبت نام</li>
+                            <li class="active">تکمیل اطلاعات</li>
+                            <li>پرداخت ماهیانه</li>
+                        </ul>
+                    </div>
+                    <div class="pricing-footer">
+                        <a href="./register" class="main-button">ثبت نام</a>
+                    </div>
+                </div>
+            </div>
+            <!-- ***** Pricing Item End ***** -->
+
+            <!-- ***** Pricing Item Start ***** -->
+            <div class="col-lg-4 col-md-6 col-sm-12" data-scroll-reveal="enter bottom move 50px over 0.6s after 0.4s">
+                <div class="pricing-item active">
+                    <div class="pricing-header">
+                        <h3 class="pricing-title">کارگزاران</h3>
+                    </div>
+                    <div class="pricing-body">
+                        <div class="price-wrapper">
+                            <span class="price">0</span>
+                            <span class="currency">ریال</span>
+                            <span class="period">عضویت رایگان</span>
+                        </div>
+                        <ul class="list">
+                            <li class="active">ثبت نام</li>
+                            <li class="active">تکمیل اطلاعات</li>
+                            <li>پرداخت ماهیانه</li>
+                        </ul>
+                    </div>
+                    <div class="pricing-footer">
+                        <a href="./register" class="main-button">ثبت نام</a>
+                    </div>
+                </div>
+            </div>
+            <!-- ***** Pricing Item End ***** -->
+
+            <!-- ***** Pricing Item Start ***** -->
+            <div class="col-lg-4 col-md-6 col-sm-12" data-scroll-reveal="enter bottom move 50px over 0.6s after 0.6s">
+                <div class="pricing-item">
+                    <div class="pricing-header">
+                        <h3 class="pricing-title">شرکتهای پیمانکار</h3>
+                    </div>
+                    <div class="pricing-body">
+                        <div class="price-wrapper">
+                            <span class="price">0</span>
+                            <span class="currency">ریال</span>
+                            <span class="period">عضویت رایگان</span>
+                        </div>
+                        <ul class="list">
+                            <li class="active">ثبت نام</li>
+                            <li class="active">تکمیل اطلاعات</li>
+                            <li class="active">24/7 پشتیبانی</li>
+                        </ul>
+                    </div>
+                    <div class="pricing-footer">
+                        <a href="./register" class="main-button">ثبت نام</a>
+                    </div>
+                </div>
+            </div>
+            <!-- ***** Pricing Item End ***** -->
+        </div>
+    </div>
+</section>
+<!-- ***** Pricing Plans End ***** -->
+
+<!-- ***** Counter Parallax Start ***** -->
+<section class="counter" style="direction: ltr !important;;">
+    <div class="content">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-6 col-sm-12">
+                    <div class="count-item decoration-bottom">
+                        <strong>126</strong>
+                        <span>پیمانکاران</span>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-12">
+                    <div class="count-item decoration-top">
+                        <strong>63</strong>
+                        <span>کارفرمایان</span>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-12">
+                    <div class="count-item decoration-bottom">
+                        <strong>18</strong>
+                        <span>سفارشات انجام شده</span>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-12">
+                    <div class="count-item">
+                        <strong>27</strong>
+                        <span>کشور</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- ***** Counter Parallax End ***** -->
+
+<!-- ***** Blog Start ***** -->
+<section class="section" id="blog">
+    <div class="container">
+        <!-- ***** Section Title Start ***** -->
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="center-heading">
+                    <h2 class="section-title">اخبار و اطلاعیه ها</h2>
+                </div>
+            </div>
+            <div class="offset-lg-3 col-lg-6">
+                <div class="center-text">
+                    <p>آخرین اطلاعیه های مربوط به سامانه را در این بخش مشاهده نمایید.</p>
+                </div>
+            </div>
+        </div>
+        <!-- ***** Section Title End ***** -->
+
+        <div class="row">
+            <div class="col-lg-4 col-md-6 col-sm-12">
+                <div class="blog-post-thumb">
+                    <div class="img">
+                        <img th:src="@{/images/index/images/blog-item-01.png}" alt="">
+                    </div>
+                    <div class="blog-content">
+                        <h3>
+                            <a href="#">راه اندازی نسخه آزمایشی</a>
+                        </h3>
+                        <div class="text">
+                            از کلیه فعالان حوزه حمل و نقل، واردات و صادرات کالا جهت همکاری دعوت به عمل می آید.
+                        </div>
+                        <a href="#" class="main-button">بیشتر بخوانید</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12">
+                <div class="blog-post-thumb">
+                    <div class="img">
+                        <img th:src="@{/images/index/images/blog-item-02.png}" alt="">
+                    </div>
+                    <div class="blog-content">
+                        <h3>
+                            <a href="#">نسخه اندرویدی سامانه</a>
+                        </h3>
+                        <div class="text">
+                            در حال حاضر سامانه نسخه موبایلی ندارد، لطفا از نصب اپ های جعلی اکیدا خودداری نمایید.
+                        </div>
+                        <a href="#" class="main-button">بیشتر بخوانید</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12">
+                <div class="blog-post-thumb">
+                    <div class="img">
+                        <img th:src="@{/images/index/images/blog-item-03.png}" alt="">
+                    </div>
+                    <div class="blog-content">
+                        <h3>
+                            <a href="#">اتصال به شبکه بین المللی حمل و نقل</a>
+                        </h3>
+                        <div class="text">
+                            اتصال به شبکه بین المللی حمل و نقل، مولدسازی را در حمل و نقل دریایی ۴۰ درصد افزایش می‌دهد.
+                        </div>
+                        <a href="#" class="main-button">بیشتر بخوانید</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- ***** Blog End ***** -->
+
+<!-- ***** Contact Us Start ***** -->
+<section class="section colored" id="contact-us">
+    <div class="container">
+        <!-- ***** Section Title Start ***** -->
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="center-heading">
+                    <h2 class="section-title">ارتباط با ما</h2>
+                </div>
+            </div>
+            <div class="offset-lg-3 col-lg-6">
+                <div class="center-text">
+                    <p>
+                        جهت کسب اطلاعات بیشتر با ما تماس بگیرید
+                    </p>
+                </div>
+            </div>
+        </div>
+        <!-- ***** Section Title End ***** -->
+
+        <div class="row">
+            <!-- ***** Contact Text Start ***** -->
+            <div class="col-lg-4 col-md-6 col-sm-12">
+                <h5 class="margin-bottom-30">در تماس باشید</h5>
+                <div class="contact-text">
+                    <p>تهران - امیرآباد شمالی
+                        <br>خیابان کاشانی</p>
+                    <p>شنبه تا چهارشنبه از 9:00 تا 17:00 - پنجشنبه ها از 9:00 تا 12:00 - به غیر از روزهای تعطیل</p>
+                </div>
+            </div>
+            <!-- ***** Contact Text End ***** -->
+
+            <!-- ***** Contact Form Start ***** -->
+            <div class="col-lg-8 col-md-6 col-sm-12">
+                <div class="contact-form">
+                    <form id="contact" action="" method="get">
+                        <div class="row">
+                            <div class="col-lg-6 col-md-12 col-sm-12">
+                                <fieldset>
+                                    <input name="name" type="text" class="form-control" id="name"
+                                           placeholder="نام و نام خانوادگی" required="">
+                                </fieldset>
+                            </div>
+                            <div class="col-lg-6 col-md-12 col-sm-12">
+                                <fieldset>
+                                    <input name="email" type="email" class="form-control" id="email"
+                                           placeholder="پست الکترونیک" required="">
+                                </fieldset>
+                            </div>
+                            <div class="col-lg-12">
+                                <fieldset>
+                                    <textarea name="message" rows="6" class="form-control" id="message"
+                                              placeholder="متن پیغام" required=""></textarea>
+                                </fieldset>
+                            </div>
+                            <div class="col-lg-12">
+                                <fieldset>
+                                    <button type="submit" id="form-submit" class="main-button" style="float: left;">ارسال</button>
+                                </fieldset>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <!-- ***** Contact Form End ***** -->
+        </div>
+    </div>
+</section>
+<!-- ***** Contact Us End ***** -->
+
+<!-- ***** Footer Start ***** -->
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 col-md-12 col-sm-12">
+                <ul class="social">
+                    <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                    <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                    <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                    <li><a href="#"><i class="fa fa-rss"></i></a></li>
+                    <li><a href="#"><i class="fa fa-dribbble"></i></a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-12">
+                <p class="copyright">Copyright &copy; 2023 IranLog Company - Logistic: IranLog</p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<!-- jQuery -->
+<script th:src="@{/js/index/js/jquery-2.1.0.min.js}"></script>
+
+<!-- Bootstrap -->
+<script th:src="@{/js/index/js/popper.js}"></script>
+<script th:src="@{/js/index/js/bootstrap.min.rtl.js}"></script>
+
+<!-- Plugins -->
+<script th:src="@{/js/index/js/scrollreveal.min.js}"></script>
+<script th:src="@{/js/index/js/waypoints.min.js}"></script>
+<script th:src="@{/js/index/js/jquery.counterup.min.js}"></script>
+<script th:src="@{/js/index/js/imgfix.min.js}"></script>
+
+<!--<div th:replace="fragment/layout::footer"></div>-->
+
+<!-- Global Init -->
+<script th:src="@{/js/index/js/custom.js}"></script>
+
+</body>
+</html>

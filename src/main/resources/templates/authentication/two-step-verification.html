@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html data-nav-layout="vertical"
+      data-vertical-style="overlay"
+      data-theme-mode="light"
+      data-header-styles="light"
+      data-menu-styles="light"
+      xmlns:th="http://www.thymeleaf.org"
+      data-toggled="close">
+<head>
+    <meta charset="UTF-8">
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <title>سامانه حمل و نقل ایران لج</title>
+    <meta name="Description" content="IRANloj - WOYA TECHNOLOGIES">
+    <div th:replace="fragment/layout::head"></div>
+
+<body>
+<div class="container-lg">
+    <div class="row justify-content-center align-items-center authentication authentication-basic h-100">
+        <div class="col-xxl-4 col-xl-5 col-lg-5 col-md-6 col-sm-8 col-12">
+            <div class="my-5 d-flex justify-content-center"><a href="index.html"> <img
+                    style="height: 100px;margin-bottom: 0pt"
+                    th:src="@{/images/brand-logos/desktop-logo.png}" alt="logo" class="desktop-logo"> <img
+                    th:src="@{/images/brand-logos/desktop-dark.png}" alt="logo" class="desktop-dark"> </a></div>
+            <div class="card custom-card">
+                <div class="card-body p-5"><p class="h5 fw-semibold mb-2 text-center">صحت سنجی شماره تلفن</p>
+                    <p class="mb-4 text-muted op-7 fw-normal text-center">لطفا کد 4 رقمی ارسال شده را در زیر وارد
+                        کنید.</p>
+
+                    <form  th:action="@{/auth}" method="post" th:object="${cod}"  enctype="multipart/form-data">
+                    <div class="row gy-3">
+                            <div class="col-xl-12 mb-2">
+                                <div class="row" style="direction: ltr">
+                                    <div class="col-3 px-1"><input type="text"
+                                                                   class="form-control form-control-lg text-center"
+                                                                   id="one"
+                                                                   maxlength="1" onkeyup="clickEvent(this,'two')" th:field="*{value1}"></div>
+                                    <div class="col-3 px-1"><input type="text"
+                                                                   class="form-control form-control-lg text-center"
+                                                                   id="two"
+                                                                   maxlength="1" onkeyup="clickEvent(this,'three')" th:field="*{value2}">
+                                    </div>
+                                    <div class="col-3 px-1"><input type="text"
+                                                                   class="form-control form-control-lg text-center"
+                                                                   id="three" maxlength="1"
+                                                                   onkeyup="clickEvent(this,'four')" th:field="*{value3}">
+                                    </div>
+                                    <div class="col-3 px-1"><input type="text"
+                                                                   class="form-control form-control-lg text-center"
+                                                                   id="four" maxlength="1" th:field="*{value4}"></div>
+                                </div>
+                                <div class="form-check mt-2"><input class="form-check-input" type="checkbox" value=""
+                                                                    id="defaultCheck1"> <label class="form-check-label"
+                                                                                               for="defaultCheck1">هنوز
+                                    کد
+                                    فعالسازی را دریافت نکرده اید؟<a href="mail.html"
+                                                                    class="text-primary ms-2 d-inline-block">ارسال
+                                        مجدد</a>
+                                </label></div>
+                            </div>
+                            <div class="col-xl-12 d-grid mt-2">
+                                <input class="btn btn-lg btn-primary" id="subbmitt" type="submit"  th:value="ثبت">
+                            </div>
+                        </div>
+                    </form>
+                    <div class="text-center" style="text-align: right;direction: ltr;"><p
+                            class="fs-12 text-danger mt-3 mb-0"><sup><i
+                            class="ri-asterisk"></i></sup>توجه: لطفا کد دریافت شده را در اختیار دیگران قرار ندهید</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div> <!-- Custom-Switcher JS -->
+<script th:src="@{/js/custom-switcher.min.js}"></script>
+<script th:src="@{/libs/bootstrap/js/bootstrap.bundle.min.js}"></script>
+<script th:src="@{/js/two-step-verification.js}"></script>
+</body>
+</html>

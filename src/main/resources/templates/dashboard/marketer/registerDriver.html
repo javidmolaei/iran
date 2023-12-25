@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html
+        data-nav-layout="vertical"
+        data-theme-mode="light"
+        data-header-styles="light"
+        data-menu-styles="dark"
+        data-toggled="close"
+        dir="rtl"
+        xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, user-scalable=no'>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>ایران لج</title>
+    <meta name="Description" content="Bootstrap Responsive Admin Web Dashboard HTML5 Template">
+    <meta name="Author" content="Spruko Technologies Private Limited">
+
+    <!-- Favicon -->
+    <link rel="icon" th:href="@{/images/brand-logos/favicon.ico}" type="image/x-icon">
+    <div th:replace="fragment/layout::head"></div>
+    <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet">
+
+</head>
+
+<body>
+<div class="page">
+    <div th:replace="fragment/layout::TopMenu"></div>
+    <div th:replace="fragment/layout::MarketerSideBar"></div>
+
+    <div class="main-content app-content">
+        <div class="container-fluid">
+
+            <div class="col-xl-12">
+                <div class="card custom-card">
+                    <div class="card-header justify-content-between">
+                        <div class="card-title">
+                            <h5>ثبت اطلاعات رانندگان</h5>
+                            <p class="alert alert-primary">
+                                لطفا در ثبت اطلاعات مورد نیاز، دقت کافی به عمل آورید.
+                            </p>
+                        </div>
+                        <a href="javascript:void(0);" data-bs-toggle="collapse" data-bs-target="#collapseExample"
+                           aria-expanded="false" aria-controls="collapseExample"> <i
+                                class="ri-arrow-down-s-line fs-18 collapse-open"></i>
+                            <i class="ri-arrow-up-s-line collapse-close fs-18"></i> </a>
+                    </div>
+
+                    <form th:action="@{/register/driver}" method="post" th:object="${driver}"
+                          enctype="multipart/form-data" class="">
+
+                        <div class="collapse show" id="collapseExample">
+                            <div class="card-body">
+                                <div class="col-xl-12 mt-2">
+                                    <div class="row switcher-style gx-3 ">
+
+                                        <div class="col-sm-6">
+
+                                            <div class="col-xl-12 mt-2">
+                                                <input type="text" class="form-control form-control-lg"
+                                                       id="signup-firstname"
+                                                       placeholder="نام" th:field="*{name}">
+                                            </div>
+
+                                            <div class="col-xl-12 mt-2">
+                                                <input type="text" class="form-control form-control-lg"
+                                                       id="signup-lastname"
+                                                       placeholder="نام خانوادگی" th:field="*{family}">
+                                            </div>
+
+                                            <div class="col-xl-12 mt-2">
+                                                <input type="text" class="form-control form-control-lg"
+                                                       id="signup-fatherName"
+                                                       placeholder="نام پدر" th:field="*{fatherName}">
+                                            </div>
+
+                                            <div class="col-xl-12 mt-2">
+                                                <input type="text" class="form-control form-control-lg"
+                                                       id="signup-nationalCode"
+                                                       placeholder="کد ملی" th:field="*{nationalCode}">
+                                            </div>
+                                            <div class="col-xl-12 mt-2">
+                                                <input type="text" class="form-control form-control-lg"
+                                                       id="signup-postalCode"
+                                                       placeholder="کد پستی" th:field="*{postalCode}">
+                                            </div>
+
+                                            <div class="col-xl-12 mt-2">
+                                                <input type="text" class="form-control form-control-lg"
+                                                       id="signup-address"
+                                                       placeholder="آدرس محل سکونت" th:field="*{address}">
+                                            </div>
+
+                                            <div class="col-xl-12 mt-2">
+                                                <input type="email" style="direction: rtl;"
+                                                       class="form-control form-control-lg"
+                                                       id="email" required placeholder="آدرس ایمیل" th:field="*{email}">
+                                            </div>
+
+                                            <div class="col-xl-12 mt-2">
+                                                <input type="text" class="form-control form-control-lg" id="phoneNumber"
+                                                       required
+                                                       placeholder="شماره موبایل" th:field="*{phoneNumber}">
+                                            </div>
+
+                                            <div class="col-xl-12 mt-2">
+                                                <div class="input-group"><input type="password"
+                                                                                class="form-control form-control-lg"
+                                                                                id="signup-password" required
+                                                                                placeholder="رمز عبور"
+                                                                                th:field="*{password}">
+                                                    <button class="btn btn-light"
+                                                            onclick="createpassword('signup-password',this)"
+                                                            type="button"
+                                                            id="button-addon2"><i
+                                                            class="ri-eye-off-line align-middle"></i>
+                                                    </button>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-xl-12 mt-2">
+                                                <input type="text" class="form-control form-control-lg"
+                                                       id="LicenseNumber"
+                                                       placeholder="شماره گواهی نامه" th:field="*{LicenseNumber}">
+                                            </div>
+
+                                            <div class="col-xl-12 mt-2">
+                                                <input type="text" class="form-control form-control-lg"
+                                                       id="transitPlate"
+                                                       placeholder="شماره پلاک ترانزیت" th:field="*{transitPlate}">
+                                            </div>
+
+                                            <div class="col-xl-12 mt-2">
+                                                <input type="text" class="form-control form-control-lg"
+                                                       id="activityType"
+                                                       placeholder="نوع فعالیت" th:field="*{activityType}">
+                                            </div>
+
+                                            <div class="col-xl-12 mt-2">
+                                                <input type="text" class="form-control form-control-lg"
+                                                       id="truckInformation"
+                                                       placeholder="اطلاعات خودرو" th:field="*{truckInformation}">
+                                            </div>
+
+                                        </div>
+
+                                        <div class="col-sm-6">
+                                            <div class="col-xl-12 mt-2">
+                                                <label for="driverPicture" class="form-label" th:for="driverPicture">بارگذاری
+                                                    تصویر
+                                                    راننده</label>
+                                                <input class="form-control form-control-md" id="driverPicture"
+                                                       placeholder="تصویر راننده" th:field="*{driverPicture}"
+                                                       th:type="file"
+                                                       accept="image/*">
+                                            </div>
+                                            <div class="col-xl-12 mt-2">
+                                                <label for="driverPicture" class="form-label"
+                                                       th:for="nationalCardPicture">بارگذاری
+                                                    تصویر کارت ملی</label>
+                                                <input th:type="file" class="form-control form-control-md"
+                                                       id="nationalCardPicture"
+                                                       placeholder="تصویر کارت ملی" th:field="*{nationalCardPicture}">
+                                            </div>
+                                            <div class="col-xl-12 mt-2">
+                                                <label for="driverPicture" class="form-label"
+                                                       th:for="licenseCardPicture">بارگذاری
+                                                    تصویر گواهینامه</label>
+                                                <input th:type="file" class="form-control form-control-md"
+                                                       id="licenseCardPicture"
+                                                       placeholder="تصویر گواهینامه" th:field="*{licenseCardPicture}">
+                                            </div>
+                                            <div class="col-xl-12 mt-2">
+                                                <label for="driverPicture" class="form-label" th:for="carCartPicture">بارگذاری
+                                                    تصویر
+                                                    کارت خودرو</label>
+                                                <input th:type="file" class="form-control form-control-md"
+                                                       id="carCartPicture"
+                                                       placeholder="نصویر کارت خودرو" th:field="*{carCartPicture}">
+                                            </div>
+                                            <div class="col-xl-12 mt-2">
+                                                <input type="text" class="form-control form-control-lg" id="truckType"
+                                                       placeholder="نوع وسیله نقلیه" th:field="*{truckType}">
+                                            </div>
+                                            <div class="col-xl-12 mt-2">
+                                                <input type="text" class="form-control form-control-lg" id="truckUsage"
+                                                       placeholder="کاربرد خودرو" th:field="*{truckUsage}">
+                                            </div>
+                                            <div class="col-xl-12 mt-2">
+                                                <input type="text" class="form-control form-control-lg" id="truckModel"
+                                                       placeholder="مدل خودرو" th:field="*{truckModel}">
+                                            </div>
+                                            <div class="col-xl-12 mt-2">
+                                                <input type="text" class="form-control form-control-lg" id="plateNumber"
+                                                       placeholder="شماره پلاک" th:field="*{plateNumber}">
+                                            </div>
+                                            <div class="col-xl-12 mt-2">
+                                                <input type="text" class="form-control form-control-lg"
+                                                       id="smartCardNumber"
+                                                       placeholder="شماره کارت هوشمند" th:field="*{smartCardNumber}">
+                                            </div>
+
+                                            <div class="col-xl-12 mt-2">
+                                                <div class="row">
+                                                    <div class="col-sm-3">
+                                                        <label class="col-form-label" for="ActivityStatus">نوع
+                                                            فعالیت:</label>
+                                                    </div>
+                                                    <div class="col-sm-9">
+                                                        <select class="form-select" aria-label="Default select example"
+                                                                id="ActivityStatus"
+                                                                th:field="*{placesActivity}">
+                                                            <option th:each="as : ${T(ir.javid.iran.model.ActivityStatus).values()}"
+                                                                    th:text="${as}"
+                                                                    th:value="${as}"></option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-xl-12 mt-2">
+                                                <div class="row">
+                                                    <div class="col-sm-3">
+                                                        <label class="col-form-label" for="state">نام
+                                                            شهر/ایالت: </label>
+                                                    </div>
+                                                    <div class="col-sm-9">
+                                                        <select class="form-select" aria-label="Default select example"
+                                                                id="state"
+                                                                th:field="*{state}">
+                                                            <option th:each="sss : ${states}"
+                                                                    th:value="${sss.getId()}"
+                                                                    th:text="${sss.getName()}"></option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="card-footer">
+                                <div class="row">
+                                    <div class="row-cols-md-6 col-md-10"></div>
+                                    <div class="col-md-2"><input class="btn btn-lg btn-primary" id="subbmitt"
+                                                                 type="submit"
+                                                                 th:value="ثبت" style="width: 100%"></div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+
+    <footer class="footer mt-auto py-3 bg-white">
+        <div class="container" style="float: left">
+            <span class="text-muted"> Copyright © <span id="year"></span>
+                <a href="javascript:void(0);" class="text-dark fw-semibold">framework</a>. Designed with
+                <span class="bi bi-heart-fill text-danger"></span> by
+                <a href="http:\\www.woya.ir">
+                    <span class="fw-semibold text-primary text-decoration-underline">WoyaGroup</span>
+                </a> All rights reserved
+            </span>
+        </div>
+    </footer>
+
+</div>
+<div class="scrollToTop"><span class="arrow"><i class="ri-arrow-up-s-fill fs-20"></i></span></div>
+<div id="responsive-overlay"></div>
+<script th:src="@{/libs/@popperjs/core/umd/popper.min.js}"></script>
+<script th:src="@{/libs/bootstrap/js/bootstrap.bundle.min.js}"></script>
+<script th:src="@{/js/defaultmenu.min.js}"></script>
+<script th:src="@{/libs/node-waves/waves.min.js}"></script>
+<script th:src="@{/js/sticky.js}"></script>
+<script th:src="@{/libs/simplebar/simplebar.min.js}"></script>
+<script th:src="@{/js/simplebar.js}"></script>
+<script th:src="@{/libs/@simonwep/pickr/pickr.es5.min.js}"></script>
+<script th:src="@{/js/custom-switcher.min.js}"></script>
+<script th:src="@{/js/product-list.js}"></script>
+<script th:src="@{/js/custom.js}"></script>
+<div th:replace="fragment/layout::footer"></div>
+
+</body>
+</html>
+
+
